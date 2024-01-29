@@ -20,7 +20,7 @@ Educational Content: Detailed explanations, tutorials, and guides to help you un
 Clone the Repository:
 
 ```bash
-git clone https://github.com/your-username/Learn-TPM.git
+git clone https://github.com/Abhinandan-Khurana/Learn-TPM.git
 ```
 
 ### Explore the Documentation:
