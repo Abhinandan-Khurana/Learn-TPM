@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 description: Introduction to Trusted Platform Module (TPM)
 ---
@@ -25,3 +26,7 @@ TPM is a physical component that’s usually built into your motherboard. Inside
 * The TPM stores passwords, security certificates, and encryption keys securely and prevents unauthorized tampering.
 * It stores information about the computer securely, so it’s easy to detect if anyone has tampered with the computer.
 * A TPM can securely generate encryption keys so that the process cannot be spied upon or interfered with.
+=======
+# Learn-TPM
+ Explore and master Trusted Platform Module (TPM) technology with this educational repository, featuring comprehensive guides, code samples, and real-world use cases.
+>>>>>>> parent of 99fe503 (Update README.md)
