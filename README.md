@@ -1,45 +1,27 @@
-# Learn-TPM
+---
+description: Introduction to Trusted Platform Module (TPM)
+---
 
-### Welcome to Learn-TPM!
+# 1. Trusted Platform Module (TPM)
 
-This repository serves as a comprehensive guide and resource hub for understanding and implementing Trusted Platform Module (TPM) technology. Whether you're a beginner looking to grasp the fundamentals or an experienced developer seeking practical insights, Learn-TPM is designed to cater to all levels of expertise.
+## What is a TPM?
 
-### What is TPM?
-Trusted Platform Module (TPM) is a hardware-based security solution that provides a secure foundation for various applications, including encryption, authentication, and secure boot. Understanding TPM is essential in today's security landscape, and this repository aims to demystify its concepts through clear documentation and hands-on examples.
+The Trusted Platform Module (TPM) is a security tool that can be part of your computer's motherboard, CPU, or provided by a software that controls the system. It works below the level of the operating system and the boot sequence, which means it can check if these systems are safe even if they've been tampered with. TPMs are necessary for any device that is compatible with Windows, and they support features in Windows' BitLocker, ChromeOS, and Linux's Integrity Measurement Architecture.
 
-### Key Features:
-Educational Content: Detailed explanations, tutorials, and guides to help you understand TPM concepts.
+However, if you look at the [many pages of guidelines and additional documents](https://trustedcomputinggroup.org/resource/tpm-library-specification/), you'll see that TPMs are quite complicated.
 
-- Code Samples: Practical examples and code snippets in various programming languages to implement TPM features.
+TPMs can check the boot state, identify devices, keep secrets, store complex key hierarchies, create complex authorization systems, and optionally secure/monitor/validate sessions. Its design is so versatile that in many situations, you could replace the term "TPM" with "magic security dust".
 
-- Use Cases: Real-world scenarios and case studies showcasing how TPM can enhance security in different applications.
+Here you should be able to run all examples there and it's a good option instead of getting new hardware. To keep things simple, we'll concentrate on TPM 2.0 on Linux, and we won't consider other operating systems and older versions.
 
-- Contributions: Open to community contributions! If you have insights, examples, or improvements, feel free to contribute to the repository.
+### Comparision of the different TPM types
 
-### Getting Started:
-Clone the Repository:
+Interesting table is available at page 4 of this [TCG document](https://trustedcomputinggroup.org/wp-content/uploads/2019\_TCG\_TPM2\_BriefOverview\_DR02web.pdf)
 
-```bash
-git clone https://github.com/Abhinandan-Khurana/Learn-TPM.git
-```
+**What does a TPM actually do?**
 
-### Explore the Documentation:
-Dive into the documentation directory to find guides and tutorials tailored for your level of expertise.
+TPM is a physical component that’s usually built into your motherboard. Inside there are many components that let the TPM do its job. What is its job exactly? Here are the main tasks a TPM performs:
 
-### Run Code Samples:
-Check out the code samples directory for practical examples and hands-on exercises.
-
-### Contribute:
-I welcome contributions! If you have something to add or improve, please follow our contribution guidelines.
-
-### Resources:
-<a href="https://trustedcomputinggroup.org/">Official TPM Specifications</a>
-
-<a href="https://tpm2-tools.readthedocs.io/en/latest/">TPM Tools and Libraries</a>
-
-<a href="https://trustedcomputinggroup.org/resource/how-to-use-the-tpm-a-guide-to-hardware-based-endpoint-security/#:~:text=1%20Set%20password%202%20Store%20digital%20credentials%20such,hard%20drive%20shutdown%20for%20endpoint%20integrity%20More%20items">Security Best Practices</a>
-
-<a href="https://trustedcomputinggroup.org/resource/tpm-library-specification/">TPM 2.0 Library</a>
-
-### License:
-This project is licensed under the MIT License - see the LICENSE file for details.
+* The TPM stores passwords, security certificates, and encryption keys securely and prevents unauthorized tampering.
+* It stores information about the computer securely, so it’s easy to detect if anyone has tampered with the computer.
+* A TPM can securely generate encryption keys so that the process cannot be spied upon or interfered with.
