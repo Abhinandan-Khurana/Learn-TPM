@@ -23,6 +23,9 @@ Clone the Repository:
 git clone https://github.com/Abhinandan-Khurana/Learn-TPM.git
 ```
 
+> [!NOTE]  
+> Switch the branch to `gitbook` to view the content.
+
 ### Explore the Documentation:
 Dive into the documentation directory to find guides and tutorials tailored for your level of expertise.
 
